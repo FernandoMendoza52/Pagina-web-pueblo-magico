@@ -8,12 +8,12 @@ body {
 }
 
 a {
-  color: #03C4EB;
+  color: rgb(255, 255, 255);
   transition: 0.5s;
 }
 
 a:hover, a:active, a:focus {
-  color: #03c5ec;
+  color: #ffffff;
   outline: none;
   text-decoration: none;
 }
@@ -29,6 +29,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 20px 0;
   padding: 0;
 }
+
 
 /* Prelaoder */
 #preloader {
@@ -79,21 +80,37 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   display: table;
   width: 100%;
-  height: 100vh;
-  background: url(../img/image1.jpeg) top center fixed;
-  background-size: 100% 100%;
+  height: 105vh;
+  background: url(../img/image1.jpeg);
+  margin-top: 0px;
+  background-size: 100% 120%;
+  background-repeat: no-repeat;
   background-position: center;
+  object-fit: cover;
   margin-left: auto;
   scroll-margin-right: auto;
+  position: relative;
+  
+  
 
 }
 
 #hero .hero-logo {
   margin: 20px;
+  
 }
 
 #hero .hero-logo img {
-  max-width: 70%;
+  max-width: 13%;
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  margin-top: 7px;
+  
+  
+  
+
+  
 }
 
 #hero .hero-container {
@@ -103,6 +120,8 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   text-align: center;
   vertical-align: middle;
+  
+
 }
 
 #hero h1 {
@@ -111,12 +130,14 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 48px;
   text-transform: uppercase;
   color: #fff;
+  
 }
 
 @media (max-width: 768px) {
   #hero h1 {
     font-size: 28px;
     line-height: 36px;
+   
   }
 }
 
@@ -130,6 +151,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 24px;
     line-height: 26px;
     margin-bottom: 30px;
+    
   }
   #hero h2 .rotating {
     display: block;
@@ -179,19 +201,26 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: #12c2e9;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#cb60b3+0,c146a1+50,a80077+51,db36a4+100;Pink+Gloss */
+background: rgb(203,96,179); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(203,96,179,1) 0%, rgba(193,70,161,1) 50%, rgba(168,0,119,1) 51%, rgba(219,54,164,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(203,96,179,1) 0%,rgba(193,70,161,1) 50%,rgba(168,0,119,1) 51%,rgba(219,54,164,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(203,96,179,1) 0%,rgba(193,70,161,1) 50%,rgba(168,0,119,1) 51%,rgba(219,54,164,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb60b3', endColorstr='#db36a4',GradientType=0 ); /* IE6-9 */
+
   padding: 20px 0;
   height: 90px;
 }
 
 #header #logo {
   float: left;
+  
+
+  
 }
 
 #header #logo h1 {
-  font-size: 36px;
+  *font-size: 36px;
   margin: 0;
   padding: 6px 0;
   line-height: 1;
@@ -199,6 +228,11 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
+  
+  
+}
+
+
 }
 
 #header #logo h1 a, #header #logo h1 a:hover {
@@ -209,25 +243,41 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   margin: 0;
   max-height: 50px;
+  padding-right: 10px;
+  position: absolute;
+  left: 50px;
+
+  
+  
 }
 
 @media (max-width: 768px) {
   #header {
     height: 80px;
+    
   }
   #header #logo h1 {
     font-size: 26px;
+    
+    
   }
   #header #logo img {
     max-height: 40px;
+    
   }
+
+ 
 }
 
 .is-sticky #header {
   
-  background: #12c2e9;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#cb60b3+0,c146a1+50,a80077+51,db36a4+100;Pink+Gloss */
+background: rgb(203,96,179); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(203,96,179,1) 0%, rgba(193,70,161,1) 50%, rgba(168,0,119,1) 51%, rgba(219,54,164,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(203,96,179,1) 0%,rgba(193,70,161,1) 50%,rgba(168,0,119,1) 51%,rgba(219,54,164,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(203,96,179,1) 0%,rgba(193,70,161,1) 50%,rgba(168,0,119,1) 51%,rgba(219,54,164,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb60b3', endColorstr='#db36a4',GradientType=0 ); /* IE6-9 */
 
 }
 
@@ -275,6 +325,8 @@ background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+
 /* Nav Menu Arrows */
 .sf-arrows .sf-with-ul {
   padding-right: 30px;
+  
+  
 }
 
 .sf-arrows .sf-with-ul:after {
@@ -284,16 +336,19 @@ background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+
   font-family: FontAwesome;
   font-style: normal;
   font-weight: normal;
+  
 }
 
 .sf-arrows ul .sf-with-ul:after {
   content: "\f105";
+  
 }
 
 /* Nav Meu Container */
 #nav-menu-container {
-  float: right;
+  float: left;
   margin: 5px 0;
+  
 }
 
 @media (max-width: 768px) {
@@ -315,7 +370,7 @@ background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+
 }
 
 .nav-menu a:hover, .nav-menu li:hover > a, .nav-menu .menu-active > a {
-  color: #03C4EB;
+  color: rgb(255, 255, 255);
 }
 
 .nav-menu ul {
@@ -324,8 +379,8 @@ background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+
 }
 
 .nav-menu ul li {
-  background: #fff;
-  border-top: 1px solid #f4f4f4;
+  background: rgb(250, 250, 250);
+  border-top: rgba(0, 0, 0, 0.9)
 }
 
 .nav-menu ul li:first-child {
@@ -333,11 +388,11 @@ background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+
 }
 
 .nav-menu ul li:hover {
-  background: #f6f6f6;
+  background: #a70707;
 }
 
 .nav-menu ul li a {
-  color: #333;
+  color: rgb(0, 0, 0);
 }
 
 .nav-menu ul ul {
@@ -360,7 +415,7 @@ background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+
 }
 
 #mobile-nav-toggle i {
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 
 @media (max-width: 768px) {
@@ -394,7 +449,7 @@ background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+
 }
 
 #mobile-nav ul li a {
-  color: #fff;
+  color: rgb(255, 255, 255);
   font-size: 16px;
   overflow: hidden;
   padding: 10px 22px 10px 15px;
@@ -423,11 +478,11 @@ background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+
 }
 
 #mobile-nav ul .menu-has-children i.fa-chevron-up {
-  color: #03C4EB;
+  color: rgb(250, 250, 250);
 }
 
 #mobile-nav ul .menu-item-active {
-  color: #03C4EB;
+  color: rgb(250, 251, 252);
 }
 
 #mobile-body-overly {
@@ -642,6 +697,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 #portfolio {
   background: #fff;
   padding: 80px 0;
+}
+.ligthbox{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  background: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #portfolio .portfolio-item {

@@ -7,6 +7,7 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
+  <meta name="viewport" content="initial-scale=1, width=device-width">
 
   <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
   <meta property="og:title" content="">
@@ -22,9 +23,7 @@
   <meta name="twitter:description" content="">
   <meta name="twitter:image" content="">
 
-  <!-- Place your favicon.ico and apple-touch-icon.png in the template root directory -->
-  <link href="favicon.ico" rel="shortcut icon">
-
+  
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
 
@@ -37,6 +36,7 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
+  <script type="text/javascript" src="jquery.min.js"></script>
 
 </head>
  <!--==========================
@@ -49,7 +49,7 @@
         <!-- Descomenta abajo si prefieres usar una imagen de texto -->
         <!--<h1><a href="#hero">Encabezado 1</a></h1>-->
       </div>
-
+      <meta name="viewport" content="initial-scale=1, width=device-width">
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li class="menu-active"><a href="#hero">Home</a></li>
@@ -90,11 +90,14 @@
   <!--==========================
   Hero Section
   ============================-->
+  
   <section id="hero">
     <div class="hero-container">
       <div class="wow fadeIn">
         <div class="hero-logo">
-          <img class="" src="img/logo.png" alt="ProOnliPc">
+            
+          <img class="hero-logo" src="img/logo.png" >
+          
         </div>
       <!--==========================
         <h1>BIENVENIDOS</h1>
@@ -104,11 +107,12 @@
         <br>
         <br>
         <br>
-        <br>
+        <br><!----
         <div class="actions">
           <a href="#about" class="btn-get-started">INICIO</a>
           <a href="#services" class="btn-get-started">OTROS SERVICIOS</a>
         </div>
+      --->
       </div>
     </div>
   </section>
@@ -230,8 +234,8 @@
 
       <div class="row">
         <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/portfolio-1.jpg);" href="">
-            <div class="details">
+          <a class="portfolio-item" style="background-image: url(img/portfolio-1.jpg);" id="imagen">
+            <div class="details" >
               <h4>Museo del Parachico</h4>
               <span>El Museo Comunitario El Parachico se pretende revalorar la importancia de los danzantes conocidos como parachicos, símbolos de la comunidad. El museo contará con tres salas en las que se conocerán los aspectos inherentes a la tradición</span>
             </div>
@@ -239,7 +243,7 @@
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/portfolio-2.jpg);" href="">
+          <a class="portfolio-item" style="background-image: url(img/portfolio-2.jpg);" id="imagen">
             <div class="details">
               <h4>Cañón del Sumidero</h4>
               <span>El Cañón del Sumidero, es un estrecho cañón de gran profundidad situado a 5 km de Tuxtla Gutiérrez capital del estado de Chiapas, México; dentro del municipio de Chiapa de Corzo.</span>
@@ -248,7 +252,7 @@
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/portfolio-3.jpg);" href="">
+          <a class="portfolio-item" style="background-image: url(img/portfolio-3.jpg);" id="imagen">
             <div class="details">
               <h4>Santo Domingo de Guzmán</h4>
               <span>El templo de Santo Domingo de Guzmán de Chiapa de Corzo se ubica en la margen derecha del río Grijalva, que aquí recibe el nombre de río Grande de Chiapa, sobre terreno llano; el terreno en el cual se asienta está entre la ribera del río y la plaza mayor de la población.</span>
@@ -257,7 +261,7 @@
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/portfolio-4.jpeg);" href="">
+          <a class="portfolio-item" style="background-image: url(img/portfolio-4.jpeg);" id="imagen">
             <div class="details">
               <h4>Portales de Chiapa de Corzo</h4>
               <span>Si visita Chiapa de Corzo sin duda alguna caminara por este largo corredor comercial ubicado justamente frente a la gran plaza cívica de la ciudad colonial, la primera en ser fundada en Chiapas. Compre, llévese su recuerdo y disfrute del ambiente de un pueblo sencillo pero lleno de historia, calidez humana y cultural.</span>
@@ -266,7 +270,7 @@
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/portfolio-5.jpg);" href="">
+          <a class="portfolio-item" style="background-image: url(img/portfolio-5.jpg);" id="imagen">
             <div class="details">
               <h4>Malecón</h4>
               <span>Conocido como el Embarcadero de Chiapa de Corzo, cuenta una extensión aproximada de 250mts.A lo largo del mismo se encuentran diferentes restaurantes, servicio de lanchas con recorridos al cañón del sumidero. Son 2 Cooperativas que se encargan de realizar los recorridos.</span>
@@ -275,7 +279,7 @@
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/portfolio-6.jpg);" href="">
+          <a class="portfolio-item" style="background-image: url(img/portfolio-6.jpg);" id="imagen">
             <div class="details">
               <h4>Fiesta Grande hde Enero en Chiapa de Corzo</h4>
               <span>La Fiesta grande de enero, Chiapas es una celebración religiosa, tradicional y popular, en la cual toda la población de la ciudad de Chiapa de Corzo participa, se lleva a cabo anualmente del 8 al 23 de enero, es una de las fiestas más antiguas de Chiapas y algunos historiadores estiman sus orígenes prehispánicos fusionado con el cristianismo en el siglo XVII y otros en el siglo XVIII. </span>
@@ -284,7 +288,7 @@
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/portfolio-7.jpg);" href="">
+          <a class="portfolio-item" style="background-image: url(img/portfolio-7.jpg);" id="imagen">
             <div class="details">
               <h4>Zona Arqueológica Chiapa de Corzo</h4>
               <span>Se desconoce el nombre antiguo que debió tener este importante asentamiento prehispánico zoque. El nombre actual se debe a su cercanía a la actual ciudad de Chiapa de Corzo, cabecera del municipio del mismo nombre. Chiapa o Chiapan, es una palabra náhuatl que significa “lugar donde crece la chía” o “río de la chía”, nombre impuesto por los aztecas durante el siglo XV. </span>
@@ -293,7 +297,7 @@
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/portfolio-8.jpg);" href="">
+          <a class="portfolio-item" style="background-image: url(img/portfolio-8.jpg);" id="imagen">
             <div class="details">
               <h4>Parachicos</h4>
               <span>Los Parachicos que forman parte de la celebración fueron declarados el 16 de febrero de 2009 como Patrimonio cultural.</span>
@@ -446,6 +450,7 @@
   <script src="lib/easing/easing.js"></script>
 
   <!-- Template Specisifc Custom Javascript File -->
+  <script src="main.js"></script>
   <script src="js/custom.js"></script>
 
   <script src="contactform/contactform.js"></script>
