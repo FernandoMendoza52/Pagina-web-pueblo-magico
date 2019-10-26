@@ -520,6 +520,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-transform: uppercase;
   text-align: center;
   font-weight: 700;
+  
+
 }
 
 .section-description {
@@ -540,15 +542,24 @@ body.mobile-nav-active #mobile-nav-toggle {
 #about {
   background: rgb(255, 255, 255);
   padding: 80px 0;
+  max-width: 100%;
 }
 
 #about .about-container {
   background: url(../img/about-img.jpg) left top no-repeat;
   background-size: contain;
+  width: 100%;
+  
+  
+  
 }
 
 #about .about-content {
   background: #fff;
+  max-width: 100%;
+  
+
+  
 }
 
 #about .about-title {
@@ -566,15 +577,25 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 /* Get Started Section
 --------------------------------*/
+
 #about1 {
   background: rgb(255, 255, 255);
   padding: 50px 0;
+  
+
+  
 }
 
 #about1 .about1-container {
 
   background: url(../img/canon.jpg) left top no-repeat;
   background-size: 550px;
+  text-align: justify;
+  
+  
+  
+  
+
   
   
 }
@@ -582,21 +603,27 @@ body.mobile-nav-active #mobile-nav-toggle {
 #about1 .about1-content {
   
   background: #fff;
+  max-width: 100%;
+  display: inline-block;
   
+
 }
 
 #about1 .about1-title {
   color: #333;
   font-weight: 700;
   font-size: 30px;
+  
 }
 
 #about1 .about1-text {
   line-height: 20px;
+  
 }
 
 #about1 .about1-text:last-child {
   margin-bottom: 0;
+  
 }
 
 /* Services Section
