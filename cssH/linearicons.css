@@ -181,6 +181,8 @@
 }
 .lnr-map-marker:before {
 	content: "\e833";
+	font-size: 20px;
+	color: red;
 }
 .lnr-map:before {
 	content: "\e834";
