@@ -640,11 +640,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #services .service-icon {
   float: left;
-  background: #03C4EB;
+  background: rgb(204, 49, 158);
   padding: 16px;
   border-radius: 50%;
   transition: 0.5s;
-  border: 1px solid #03C4EB;
+  border: 1px solid rgb(227, 3, 235);
 }
 
 #services .service-icon i {
