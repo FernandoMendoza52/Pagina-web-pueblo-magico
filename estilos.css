@@ -82,9 +82,8 @@ img{
     animation: arriba 1s ease-in;
 
 }
-
 .wave{
-    height: 100px;
+    height: 25px;
     width: 100%;
     background: #DA4453;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #89216B, #DA4453);  /* Chrome 10-25, Safari 5.1-6 */
